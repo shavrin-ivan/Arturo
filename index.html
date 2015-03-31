@@ -1,277 +1,73 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Ino &mdash; Ino 0.3 documentation</title>
-    
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '0.3',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Ino 0.3 documentation" href="#" />
-<link rel="stylesheet" type="text/css" href="_static/ino.css">
-<link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Andada' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Arturo by scottdarch</title>
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-<div class="headbar">
-    <div class="amperka">
-        Developed by Amperka ::
-        <a href="http://amperka.ru">Arduino</a> in&nbsp;&nbsp;<img src="_static/ru.png" title="Flag of Russian Federation, you know"/>
-    </div>
-    <div class="github">
-        <a href="https://github.com/amperka/ino">Fork the project on GitHub</a>
-    </div>
-</div>
+    <div class="wrapper">
+      <header>
+        <h1>Arturo</h1>
+        <p>Fork of amperka/ino to continue development.</p>
+
+        <p class="view"><a href="https://github.com/scottdarch/Arturo">View the Project on GitHub <small>scottdarch/Arturo</small></a></p>
 
 
-<div class="sphinxsidebar">
-    <div class="sphinxsidebarwrapper">
-        <a href="/"><img src="_static/logo.png"/></a>
         <ul>
-<li><a class="reference internal" href="#">Ino</a><ul>
-<li><a class="reference internal" href="#features">Features</a></li>
-<li><a class="reference internal" href="#installation">Installation</a></li>
-<li><a class="reference internal" href="#requirements">Requirements</a></li>
-<li><a class="reference internal" href="#limitations">Limitations</a></li>
-<li><a class="reference internal" href="#getting-help">Getting Help</a></li>
-<li><a class="reference internal" href="#license">License</a></li>
-<li><a class="reference internal" href="#contributors">Contributors</a></li>
-<li><a class="reference internal" href="#changelog">Changelog</a></li>
-</ul>
-</li>
-</ul>
+          <li><a href="https://github.com/scottdarch/Arturo/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/scottdarch/Arturo/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/scottdarch/Arturo">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="docs/ArturoLogo.png" alt="Arturo Logo"></p>
 
+<h2>
+<a id="introducing-arturo" class="anchor" href="#introducing-arturo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introducing Arturo</h2>
+
+<blockquote>
+<p>A command-line tool for Arduino</p>
+</blockquote>
+
+<p>This is a fork from <a href="https://github.com/amperka/ino/commit/f23ee5cb14edc30ec087d3eab7b301736da42362">ino/master</a>.
+The original ino contributors did a fantastic job but they decided they no longer
+had time to maintain this tool. I asked them if they wanted me to take over ino
+but they preferred that I fork it. And so Arturo was born.</p>
+
+<p>Stay tuned for more details and changes. I do plan on going through the existing
+ino PRs and issues to see if there's anything I can fix.</p>
+
+<p>I am looking for other contributors as well. I especially need Windows and Linux
+testers as I'm doing all this work on a mac.</p>
+
+<h2>
+<a id="installing-arturo" class="anchor" href="#installing-arturo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing Arturo</h2>
+
+<p>Clone this repo, cd Arturo, make install.</p>
+
+<p>Remember that the Arturo command is <code>ano</code>. It should not conflict in any way
+with ino and you can install the two side-by-side (please file any issues if this
+is not true).</p>
+
+<p>Make sure you do an <code>ano clean</code> if you had previously built using ino. I will
+try to handle this automatically in a future release.</p>
+
+<p><img src="docs/Toscanini.png" alt="Arturo Toscanini" height="150" width="147"></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/scottdarch">scottdarch</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-</div>
-
-
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body">
-            
-  <div class="section" id="ino">
-<h1>Ino<a class="headerlink" href="#ino" title="Permalink to this headline">¶</a></h1>
-<p>Ino is a command line toolkit for working with Arduino hardware</p>
-<p>It allows you to:</p>
-<ul class="simple">
-<li>Quickly create new projects</li>
-<li>Build a firmware from multiple source files and libraries</li>
-<li>Upload the firmware to a device</li>
-<li>Perform serial communication with a device (aka serial monitor)</li>
-</ul>
-<p>Ino may replace Arduino IDE UI if you prefer to work with command
-line and an editor of your choice or if you want to integrate Arduino
-build process to 3-rd party IDE.</p>
-<p>Ino is based on <tt class="docutils literal"><span class="pre">make</span></tt> to perform builds. However Makefiles are
-generated automatically and you&#8217;ll never see them if you don&#8217;t want to.</p>
-<div class="section" id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Simple. No build scripts are necessary.</li>
-<li>Out-of-source builds. Directories with source files are not
-cluttered with intermediate object files.</li>
-<li>Support for <tt class="docutils literal"><span class="pre">*.ino</span></tt> and <tt class="docutils literal"><span class="pre">*.pde</span></tt> sketches as well as
-raw <tt class="docutils literal"><span class="pre">*.c</span></tt> and <tt class="docutils literal"><span class="pre">*.cpp</span></tt>.</li>
-<li>Support for Arduino Software versions 1.x as well as 0.x.</li>
-<li>Automatic dependency tracking. Referred libraries are automatically
-included in the build process. Changes in <tt class="docutils literal"><span class="pre">*.h</span></tt> files lead
-to recompilation of sources which include them.</li>
-<li>Pretty colorful output.</li>
-<li>Support for all boards that are supported by Arduino IDE.</li>
-<li>Fast. Discovered tool paths and other stuff is cached across runs.
-If nothing has changed, nothing is build.</li>
-<li>Flexible. Support for simple ini-style config files to setup
-machine-specific info like used Arduino model, Arduino distribution
-path, etc just once.</li>
-</ul>
-</div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>From source:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://pypi.python.org/pypi/ino/#downloads">Download latest source tarball</a></li>
-<li>Or clone it from GitHub: <tt class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">git://github.com/amperka/ino.git</span></tt></li>
-<li>Do <tt class="docutils literal"><span class="pre">make</span> <span class="pre">install</span></tt> to perform installation under <tt class="docutils literal"><span class="pre">/usr/local</span></tt></li>
-<li>Or see <tt class="docutils literal"><span class="pre">INSTALL</span></tt> for instructions on changing destination directory</li>
-</ul>
-<p>With Python setup tools:</p>
-<ul class="simple">
-<li>Either <tt class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ino</span></tt></li>
-<li>Or <tt class="docutils literal"><span class="pre">easy_install</span> <span class="pre">ino</span></tt></li>
-</ul>
-</div>
-<div class="section" id="requirements">
-<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Python 2.6+</li>
-<li>Arduino IDE distribution</li>
-<li><tt class="docutils literal"><span class="pre">picocom</span></tt> for serial communication</li>
-</ul>
-</div>
-<div class="section" id="limitations">
-<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>As for current version, ino works only in Linux and MacOS.
-However it was created with other OS users in mind,
-so it will eventually get full cross-platform support.
-Help from Windows-developers is much appreciated.</li>
-</ul>
-</div>
-<div class="section" id="getting-help">
-<h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Take a look at <a class="reference external" href="http://inotool.org/quickstart">Quick start tutorial</a>.</li>
-<li>Run <tt class="docutils literal"><span class="pre">ino</span> <span class="pre">--help</span></tt>.</li>
-<li>Post <a class="reference external" href="http://github.com/amperka/ino/issues">issues to GitHub</a>.</li>
-</ul>
-</div>
-<div class="section" id="license">
-<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>If not stated otherwise ino is distributed in terms of MIT software license.
-See MIT-LICENSE.txt in the distribution for details.</p>
-</div>
-<div class="section" id="contributors">
-<h2>Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><a class="reference external" href="https://github.com/dcharbonnier">David Charbonnier</a>.</li>
-<li><a class="reference external" href="https://github.com/jboone">Jared Boone</a>.</li>
-<li><a class="reference external" href="https://github.com/larsenglund">Lars Englund</a>.</li>
-<li><a class="reference external" href="https://github.com/aruiz">Alberto Ruiz</a>.</li>
-<li><a class="reference external" href="https://github.com/12qu">12qu</a>.</li>
-<li><a class="reference external" href="https://github.com/gnusouth">Michael Sproul</a>.</li>
-<li><a class="reference external" href="https://github.com/Kernald">Marc Plano-Lesay</a>.</li>
-<li><a class="reference external" href="https://github.com/fabiankr">Fabian Kreiser</a>.</li>
-</ul>
-</div>
-<div class="section" id="changelog">
-<h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>0.3.6</dt>
-<dd><ul class="first last simple">
-<li>Fix #74, #107, #108: Use of types declared in included files is allowed
-in function definitions. Previously it led to: &#8216;&lt;enum|struct|typedef&gt;&#8217; not
-declared in this scope.</li>
-<li>Fix #105: Search for <cite>avrdude.conf</cite> in <cite>/etc/avrdude</cite> to be compatible with
-Fedora.</li>
-<li>Fix #99: Check for an existing project before building or creating directories</li>
-<li>Fix #93, #57, #8: Custom compile and link flags can be passed as <cite>ino build</cite> arguments</li>
-<li>Fix #60, #63: Custom <cite>make</cite> tool command can be passed as <cite>ino build</cite> argument</li>
-<li>Fix #23, #28: <cite>make</cite> is searched within Arduino IDE binaries as well</li>
-<li>Fix #88, #103: Correct version parsing for some distributions that mangle it</li>
-<li>Fix #46: Taking build number into account in version string</li>
-<li>Fix #19, #81, #82: Custom command line arguments for <cite>picocom</cite> can be passed
-while running <cite>ino serial</cite></li>
-</ul>
-</dd>
-<dt>0.3.5</dt>
-<dd><ul class="first last simple">
-<li>Fix #62: Include <cite>MIT-LICENSE.txt</cite> in the tarball.</li>
-</ul>
-</dd>
-<dt>0.3.4</dt>
-<dd><ul class="first last simple">
-<li>Fix #44, #45: Building and uploading for Arduino Leonardo is fully supported.</li>
-<li>Fix #3, #29: Build artifacts for different board models and Arduino distributions
-go in different build subdirectories, so you haven&#8217;t to run <tt class="docutils literal"><span class="pre">ino</span> <span class="pre">clean</span></tt> and
-rebuild if you switch to another Arduino model or software distribution.</li>
-<li>The version of avr gcc toolset that is bundled with Arduino Software is now
-always preferred over system-wide. So that users with edge-versions of software
-(such as Arch Linux) able to produce expected results.</li>
-</ul>
-</dd>
-<dt>0.3.3</dt>
-<dd><ul class="first last simple">
-<li>Fix #16: <tt class="docutils literal"><span class="pre">*.ino</span></tt> and <tt class="docutils literal"><span class="pre">*.pde</span></tt> sketches are now populated with function
-prototypes while preprocessing step in the same way as it done by Arduino IDE,
-so it is now possible to use functions before they&#8217;re declared or defined.</li>
-</ul>
-</dd>
-<dt>0.3.2</dt>
-<dd><ul class="first last simple">
-<li>Fix #13: Local header #includes from sketch files are no longer lead to
-&#8216;No such file or directory&#8217; error. Now GCC is given an additional include
-path pointing to the sketch origin while compiling processed source.</li>
-<li>Fix #18: Proper scanning of dependency files when multiple library
-dependencies are found on the same line. Now all of them are taken into
-account, not just first one.</li>
-<li>Add: Processed sketch files now have #line directive so that they appear
-as original source in GCC output in case of syntax errors.</li>
-<li>Add: Automatic dependency tracking for included header files. Now a
-sketch or cpp source get rebuild once an included (directly or
-indirectly) header changes.</li>
-</ul>
-</dd>
-<dt>0.3.1</dt>
-<dd><ul class="first last simple">
-<li>Support for <tt class="docutils literal"><span class="pre">ino</span> <span class="pre">build</span> <span class="pre">--verbose</span></tt></li>
-</ul>
-</dd>
-<dt>0.3.0</dt>
-<dd><ul class="first last simple">
-<li>MacOS support</li>
-<li>Serial port guess</li>
-</ul>
-</dd>
-<dt>0.2.0</dt>
-<dd><ul class="first last simple">
-<li>Support for Arduino Software version 1.0</li>
-</ul>
-</dd>
-<dt>0.1.x</dt>
-<dd><ul class="first last simple">
-<li>Initial release</li>
-<li>Various bug fixes</li>
-</ul>
-</dd>
-</dl>
-</div>
-</div>
-
-
-          </div>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
+    <script src="javascripts/scale.fix.js"></script>
     
-    <div class="footer">
-        &copy; Copyright 2011, Amperka Team.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
-    </div>
-    <!-- Yandex.Metrika counter -->
-    <div style="display:none;"><script type="text/javascript">
-    (function(w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter10625653 = new Ya.Metrika({id:10625653, enableAll: true});
-            }
-            catch(e) { }
-        });
-    })(window, "yandex_metrika_callbacks");
-    </script></div>
-    <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
-    <noscript><div><img src="//mc.yandex.ru/watch/10625653" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-
   </body>
 </html>
