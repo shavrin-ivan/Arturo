@@ -42,23 +42,18 @@ The original ino contributors did a fantastic job but they decided they no longe
 had time to maintain this tool. I asked them if they wanted me to take over ino
 but they preferred that I fork it. And so Arturo was born.</p>
 
-<p>Stay tuned for more details and changes. I do plan on going through the existing
-ino PRs and issues to see if there's anything I can fix.</p>
+<p><strong>Unfortunatly Arturo currently only works with version 1.6.1 and <em>earlier</em> of the Arduino SDK.</strong> I am working on a fix but it's a major rewrite to support 1.6.2 and newer toolchains.</p>
 
-<p>I am looking for other contributors as well. I especially need Windows and Linux
-testers as I'm doing all this work on a mac.</p>
+<p>I am looking for other contributors as well. I especially need help with Windows as I don't have access to a Windows environment.</p>
 
 <h2>
 <a id="installing-arturo" class="anchor" href="#installing-arturo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing Arturo</h2>
 
-<p>Clone this repo, cd Arturo, make install.</p>
+<p>Clone this repo, cd Arturo, <code>make install</code> (on linux you might need to do <code>sudo make install</code>).</p>
 
 <p>Remember that the Arturo command is <code>ano</code>. It should not conflict in any way
 with ino and you can install the two side-by-side (please file any issues if this
 is not true).</p>
-
-<p>Make sure you do an <code>ano clean</code> if you had previously built using ino. I will
-try to handle this automatically in a future release.</p>
 
 <p><img src="docs/Toscanini.png" alt="Arturo Toscanini" height="150" width="147"></p>
       </section>
